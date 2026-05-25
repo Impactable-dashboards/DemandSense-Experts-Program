@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DemandSense · Creator Partnership Program</title>
+<meta name="description" content="Partner with DemandSense — the LinkedIn Ads intelligence platform. A four-level creator program for practitioners who want to build a presence inside the DS ecosystem.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  /* DS PALETTE — pulled from demandsense.com */
+  --ds-blue:    #1B9BD1;
+  --ds-blue-l:  #14AAED;
+  --ds-blue-d:  #0d79b4;
+  --ds-blue-dd: #094f76;
+  --ds-bg:      #0A0F1A;
+  --ds-bg-2:    #0E1626;
+  --ds-bg-3:    #131D33;
+  --ds-bg-4:    #1A2542;
+  --ds-card:    #131D33;
+  --white:      #F1F5FB;
+  --white-d:    #FFFFFF;
+  --dim:        rgba(241,245,251,0.72);
+  --dim-2:      rgba(241,245,251,0.55);
+  --muted:      #6B7A92;
+  --b1:         rgba(255,255,255,0.06);
+  --b2:         rgba(27,155,209,0.22);
+  --b3:         rgba(27,155,209,0.42);
+  --g1:         rgba(255,255,255,0.025);
+  --g2:         rgba(27,155,209,0.07);
+  --g3:         rgba(27,155,209,0.13);
+  /* Level accents */
+  --l1: #2DD4BF;
+  --l2: #1B9BD1;
+  --l3: #8B5CF6;
+  --l4: #F59E0B;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Manrope',-apple-system,sans-serif;
+  background:var(--ds-bg);color:var(--white);
+  overflow-x:hidden;-webkit-font-smoothing:antialiased;
+  line-height:1.55;
+}
+a{text-decoration:none;color:inherit}
+
+/* ── HEADER ── */
+header{
+  padding:18px 48px;
+  display:flex;align-items:center;justify-content:space-between;
+  border-bottom:1px solid var(--b1);
+  background:rgba(10,15,26,0.94);
+  position:sticky;top:0;z-index:100;
+  backdrop-filter:blur(20px);
+}
+.logo-wrap{display:flex;align-items:center;gap:14px}
+.ds-logo{display:flex;align-items:center;gap:9px}
+.ds-mark{
+  width:30px;height:30px;border-radius:8px;
+  background:linear-gradient(135deg,var(--ds-blue-d),var(--ds-blue-l));
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Manrope',sans-serif;font-size:12px;font-weight:800;
+  color:#fff;letter-spacing:-.02em;
+  box-shadow:0 0 20px rgba(27,155,209,0.32);
+}
+.ds-text{
+  font-family:'Manrope',sans-serif;font-weight:800;font-size:17px;
+  color:var(--white-d);letter-spacing:-.018em;
+}
+.logo-divider{width:1px;height:18px;background:var(--b1)}
+.logo-prog{font-size:12px;color:var(--dim-2);font-weight:500;letter-spacing:.02em}
+.hnav{display:flex;gap:4px;align-items:center}
+.hnav a{
+  font-size:13px;font-weight:500;
+  padding:8px 14px;border-radius:6px;
+  color:var(--dim);transition:all .15s;
+}
+.hnav a:hover{color:var(--ds-blue-l);background:var(--g2)}
+.hnav .cta{
+  background:var(--ds-blue);color:#fff;
+  padding:8px 18px;font-weight:600;
+}
+.hnav .cta:hover{background:var(--ds-blue-l);color:#fff}
+
+/* ── HERO ── */
+.hero{
+  padding:88px 48px 80px;
+  background:radial-gradient(ellipse at top right,rgba(27,155,209,0.18) 0%,transparent 55%),linear-gradient(180deg,var(--ds-bg) 0%,var(--ds-bg-2) 100%);
+  border-bottom:1px solid var(--b2);
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;opacity:.4;
+  background-image:
+    linear-gradient(rgba(27,155,209,0.03) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(27,155,209,0.03) 1px,transparent 1px);
+  background-size:64px 64px;
+}
+.hero-inner{
+  max-width:1100px;margin:0 auto;
+  position:relative;z-index:1;
+  display:grid;grid-template-columns:1.4fr 1fr;
+  gap:64px;align-items:center;
+}
+.hero-pill{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  padding:6px 14px;border-radius:20px;
+  border:1px solid var(--b2);color:var(--ds-blue-l);background:var(--g2);
+  margin-bottom:24px;
+}
+.pulse{width:6px;height:6px;border-radius:50%;background:var(--ds-blue-l);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.65)}}
+.hero h1{
+  font-family:'Manrope',sans-serif;font-weight:800;
+  font-size:clamp(32px,4.6vw,52px);letter-spacing:-.025em;
+  line-height:1.04;margin-bottom:20px;color:var(--white-d);
+}
+.hero h1 em{
+  color:var(--ds-blue-l);font-style:normal;
+  background:linear-gradient(135deg,var(--ds-blue-l),#5cc4f3);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.hero-sub{
+  font-size:17px;color:var(--dim);line-height:1.7;
+  max-width:540px;margin-bottom:32px;
+}
+/* Hero CTAs */
+.hero-cta-row{display:flex;gap:24px;flex-wrap:wrap;align-items:center}
+.hero-link{
+  font-size:14px;font-weight:600;color:var(--ds-blue-l);
+  display:inline-flex;align-items:center;gap:6px;
+  transition:gap .15s,color .15s;
+}
+.hero-link:hover{gap:10px;color:#5cc4f3}
+
+/* Hero side visual */
+.hero-side{
+  position:relative;
+}
+.hero-card{
+  background:var(--ds-bg-3);border:1px solid var(--b2);
+  border-radius:14px;overflow:hidden;
+  box-shadow:0 24px 48px rgba(0,0,0,0.4),0 0 0 1px rgba(27,155,209,0.04);
+  position:relative;
+}
+.hero-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;z-index:2;
+  background:linear-gradient(90deg,transparent,var(--ds-blue-l),transparent);
+}
+.hc-toolbar{
+  display:flex;align-items:center;gap:14px;
+  padding:12px 16px;border-bottom:1px solid var(--b1);
+  background:rgba(255,255,255,0.015);
+}
+.hc-dots{display:flex;gap:5px}
+.hc-dots span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.12)}
+.hc-tab{
+  font-family:'JetBrains Mono',monospace;font-size:11px;
+  color:var(--ds-blue-l);letter-spacing:.02em;
+}
+.hc-body{padding:14px}
+.hc-event{
+  display:grid;grid-template-columns:24px 1fr auto;gap:12px;align-items:center;
+  padding:10px 4px;position:relative;
+}
+.hc-event::before{
+  content:'';position:absolute;
+  left:11px;top:28px;bottom:-10px;width:2px;
+  background:linear-gradient(180deg,rgba(27,155,209,0.3),rgba(27,155,209,0.05));
+  z-index:0;
+}
+.hc-event:last-child::before{display:none}
+.hc-dot{
+  width:24px;height:24px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;z-index:1;font-size:11px;
+  border:2px solid var(--ds-bg-3);
+}
+.hc-dot.e-imp{background:rgba(45,212,191,0.2);box-shadow:0 0 0 1px var(--l1)}
+.hc-dot.e-imp::after{content:'👁';font-size:10px}
+.hc-dot.e-eng{background:rgba(27,155,209,0.2);box-shadow:0 0 0 1px var(--ds-blue-l)}
+.hc-dot.e-eng::after{content:'⚡';font-size:9px}
+.hc-dot.e-web{background:rgba(139,92,246,0.2);box-shadow:0 0 0 1px var(--l3)}
+.hc-dot.e-web::after{content:'🌐';font-size:9px}
+.hc-dot.e-deal{background:rgba(245,158,11,0.2);box-shadow:0 0 0 1px var(--l4)}
+.hc-dot.e-deal::after{content:'💼';font-size:9px}
+.hc-dot.e-close{background:rgba(34,197,94,0.25);box-shadow:0 0 0 1px #22c55e}
+.hc-dot.e-close::after{content:'✓';font-size:10px;color:#22c55e;font-weight:700}
+.hc-event-mid{min-width:0}
+.hc-event-t{
+  font-size:13px;font-weight:600;color:var(--white-d);
+  margin-bottom:2px;letter-spacing:-.005em;
+}
+.hc-event-meta{font-size:11.5px;color:var(--dim-2);font-weight:400}
+.hc-event-tag{
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  color:var(--muted);letter-spacing:.04em;white-space:nowrap;
+}
+.hc-footer{
+  padding:12px 18px;border-top:1px solid var(--b1);
+  background:rgba(27,155,209,0.04);
+  display:flex;justify-content:space-between;align-items:center;
+}
+.hc-foot-label{
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+}
+.hc-foot-val{
+  font-size:12px;font-weight:600;color:var(--ds-blue-l);
+}
+
+/* ── SECTIONS ── */
+.main{max-width:1100px;margin:0 auto;padding:0 48px}
+section{padding:80px 0;border-bottom:1px solid var(--b1)}
+section:last-of-type{border-bottom:none}
+.sec-eyebrow{
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--ds-blue-l);
+  display:flex;align-items:center;gap:10px;margin-bottom:14px;
+}
+.sec-eyebrow::before{content:'';width:24px;height:1px;background:var(--ds-blue-l)}
+.sec-title{
+  font-family:'Manrope',sans-serif;font-weight:800;
+  font-size:clamp(24px,3.2vw,38px);letter-spacing:-.022em;line-height:1.12;
+  margin-bottom:14px;color:var(--white-d);
+}
+.sec-sub{
+  font-size:16px;color:var(--dim);line-height:1.7;
+  max-width:660px;margin-bottom:36px;
+}
+
+/* ── INSIDE DEMANDSENSE / FEATURES ── */
+.feat-hero{
+  background:linear-gradient(135deg,rgba(27,155,209,0.12) 0%,rgba(27,155,209,0.03) 60%,transparent 100%);
+  border:1px solid var(--b2);border-radius:16px;
+  padding:32px;margin-bottom:18px;
+  display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:center;
+  position:relative;overflow:hidden;
+}
+.feat-hero::before{
+  content:'';position:absolute;
+  width:300px;height:300px;border-radius:50%;
+  background:var(--ds-blue);opacity:.06;filter:blur(80px);
+  top:-100px;right:-50px;pointer-events:none;
+}
+.feat-hero-content{position:relative}
+.feat-tag{
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--ds-blue-l);
+  background:var(--g3);border:1px solid var(--b2);
+  padding:5px 11px;border-radius:5px;margin-bottom:14px;
+}
+.feat-hero h3{
+  font-weight:800;font-size:clamp(22px,2.6vw,28px);
+  letter-spacing:-.018em;line-height:1.15;color:var(--white-d);margin-bottom:14px;
+}
+.feat-hero p{font-size:14.5px;color:var(--dim);line-height:1.7;margin-bottom:18px}
+.feat-logos{display:flex;gap:8px;flex-wrap:wrap}
+.feat-logo{
+  font-size:12px;font-weight:600;padding:7px 14px;border-radius:6px;
+  background:rgba(255,255,255,0.05);border:1px solid var(--b1);color:var(--white);
+}
+.feat-hero-visual{
+  display:flex;flex-direction:column;gap:8px;
+  position:relative;
+}
+.fhv-row{
+  display:flex;align-items:center;gap:10px;
+  padding:11px 16px;background:var(--ds-bg-3);
+  border:1px solid var(--b1);border-radius:8px;
+}
+.fhv-row.last{background:linear-gradient(135deg,rgba(34,197,94,0.12),rgba(34,197,94,0.04));border-color:rgba(34,197,94,0.3)}
+.fhv-step{font-size:13px;font-weight:600;color:var(--dim);flex:1}
+.fhv-step.done{color:#22c55e}
+.fhv-arrow{color:var(--ds-blue-l);font-size:14px;font-weight:700}
+
+.feat-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px;
+}
+.feat-card{
+  background:var(--g1);border:1px solid var(--b1);
+  border-radius:11px;padding:20px;transition:all .25s;
+}
+.feat-card:hover{border-color:var(--b2);transform:translateY(-2px);background:var(--g2)}
+.feat-ic{
+  font-size:24px;margin-bottom:12px;display:block;
+}
+.feat-card h4{
+  font-weight:700;font-size:14px;color:var(--white-d);
+  margin-bottom:7px;letter-spacing:-.005em;
+}
+.feat-card p{font-size:12.5px;color:var(--dim);line-height:1.6}
+
+.feat-callout{
+  display:flex;gap:14px;align-items:flex-start;
+  background:var(--g2);border:1px solid var(--b2);
+  border-left:3px solid var(--ds-blue-l);
+  border-radius:8px;padding:16px 18px;
+}
+.feat-callout-ic{font-size:18px;padding-top:1px}
+.feat-callout-t{font-size:13.5px;color:var(--dim);line-height:1.65}
+.feat-callout-t strong{color:var(--white-d);font-weight:700}
+
+/* TWO TIERS OF ACCESS */
+.access-tiers{
+  display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px;
+}
+.access-tier{
+  background:var(--g1);border:1px solid var(--b1);
+  border-radius:14px;padding:24px;
+  display:flex;flex-direction:column;gap:12px;
+  transition:border-color .25s,transform .25s;
+}
+.access-tier:hover{transform:translateY(-2px)}
+.access-tier.free{border-color:rgba(45,212,191,0.2);background:linear-gradient(180deg,rgba(45,212,191,0.04),transparent 70%)}
+.access-tier.free:hover{border-color:rgba(45,212,191,0.4)}
+.access-tier.paid{border-color:var(--b2);background:linear-gradient(180deg,rgba(27,155,209,0.06),transparent 70%);box-shadow:0 0 30px rgba(27,155,209,0.04)}
+.access-tier.paid:hover{border-color:var(--b3)}
+.at-head{display:flex;align-items:center;gap:12px}
+.at-num{
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:.1em;text-transform:uppercase;font-weight:700;
+  padding:4px 10px;border-radius:5px;
+}
+.free .at-num{background:rgba(45,212,191,0.15);color:var(--l1);border:1px solid rgba(45,212,191,0.3)}
+.paid .at-num{background:var(--g3);color:var(--ds-blue-l);border:1px solid var(--b2)}
+.at-name{font-family:'Manrope',sans-serif;font-weight:800;font-size:18px;color:var(--white-d);letter-spacing:-.015em}
+.at-tagline{font-size:13.5px;color:var(--dim);line-height:1.55;margin-bottom:2px}
+.at-list{display:flex;flex-direction:column;gap:8px;list-style:none}
+.at-list li{
+  display:flex;gap:10px;align-items:flex-start;
+  font-size:13px;color:var(--dim);line-height:1.55;
+}
+.at-list li::before{
+  content:'';width:14px;height:14px;min-width:14px;border-radius:4px;
+  margin-top:3px;flex-shrink:0;
+  background-repeat:no-repeat;background-position:center;
+}
+.free .at-list li::before{
+  background-color:rgba(45,212,191,0.12);border:1px solid rgba(45,212,191,0.4);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M1.5 5l2.5 2.5 4.5-4.5' stroke='%232DD4BF' stroke-width='1.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.paid .at-list li::before{
+  background-color:var(--g3);border:1px solid var(--b3);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M1.5 5l2.5 2.5 4.5-4.5' stroke='%2314AAED' stroke-width='1.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.at-footer{
+  font-size:12px;color:var(--muted);font-style:italic;
+  padding-top:10px;margin-top:auto;border-top:1px solid var(--b1);
+}
+.promises{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:14px;
+}
+.promise{
+  background:var(--g1);border:1px solid var(--b1);
+  border-radius:11px;padding:20px;
+  transition:all .25s;
+}
+.promise:hover{border-color:var(--b2);transform:translateY(-2px)}
+.promise-icon{
+  width:38px;height:38px;border-radius:9px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--g2);border:1px solid var(--b2);
+  font-size:18px;margin-bottom:14px;
+}
+.promise h3{
+  font-weight:700;font-size:14px;margin-bottom:6px;color:var(--white-d);
+}
+.promise p{font-size:13px;color:var(--dim);line-height:1.6}
+
+/* ── ENTRY BANNER ── */
+.entry-banner{
+  display:grid;grid-template-columns:48px 1fr auto;gap:18px;align-items:center;
+  background:linear-gradient(135deg,rgba(45,212,191,0.08),rgba(27,155,209,0.04));
+  border:1px solid rgba(45,212,191,0.25);border-radius:12px;
+  padding:18px 22px;margin-bottom:32px;
+}
+.eb-ic{
+  width:48px;height:48px;border-radius:11px;
+  background:rgba(45,212,191,0.12);border:1px solid rgba(45,212,191,0.3);
+  display:flex;align-items:center;justify-content:center;font-size:22px;
+}
+.eb-mid{}
+.eb-title{font-weight:700;font-size:15px;color:var(--white-d);margin-bottom:4px;letter-spacing:-.005em}
+.eb-sub{font-size:13px;color:var(--dim);line-height:1.55}
+.eb-cta{
+  font-size:13px;font-weight:600;color:var(--l1);
+  padding:9px 18px;border-radius:7px;
+  background:rgba(45,212,191,0.1);border:1px solid rgba(45,212,191,0.3);
+  white-space:nowrap;transition:all .2s;
+}
+.eb-cta:hover{background:rgba(45,212,191,0.18);color:#5af2db}
+
+/* ── FUNNEL OVERVIEW ── */
+.funnel{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:0;position:relative;padding:8px 0;
+}
+.funnel::before{
+  content:'';position:absolute;
+  top:42px;left:12.5%;right:12.5%;height:2px;
+  background:linear-gradient(90deg,var(--l1),var(--l2) 33%,var(--l3) 66%,var(--l4));
+  opacity:.4;z-index:0;
+}
+.fnode{
+  display:flex;flex-direction:column;align-items:center;
+  text-align:center;gap:12px;position:relative;z-index:1;padding:0 12px;
+}
+.fcircle{
+  width:64px;height:64px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:22px;color:#fff;
+  background:var(--ds-bg-3);border:2px solid;
+  box-shadow:0 0 0 6px var(--ds-bg);
+}
+.fnode.n1 .fcircle{background:linear-gradient(135deg,#0d5d56,var(--l1));border-color:var(--l1)}
+.fnode.n2 .fcircle{background:linear-gradient(135deg,var(--ds-blue-dd),var(--l2));border-color:var(--l2)}
+.fnode.n3 .fcircle{background:linear-gradient(135deg,#3a1166,var(--l3));border-color:var(--l3)}
+.fnode.n4 .fcircle{background:linear-gradient(135deg,#7c4a09,var(--l4));border-color:var(--l4)}
+.fnode-label{font-weight:700;font-size:14px;color:var(--white-d)}
+.fnode-sub{font-size:12px;color:var(--dim-2);max-width:170px;line-height:1.45}
+.fnode-price{
+  font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;
+  padding:4px 11px;border-radius:5px;
+  background:var(--g2);color:var(--ds-blue-l);border:1px solid var(--b2);
+}
+
+/* ── LEVELS ── */
+.level{
+  background:var(--g1);border:1px solid var(--b1);
+  border-radius:18px;overflow:hidden;margin-bottom:18px;
+  display:grid;grid-template-columns:300px 1fr;
+  transition:border-color .25s;
+}
+.level:hover{border-color:var(--b2)}
+.level-side{
+  padding:32px;border-right:1px solid var(--b1);
+  display:flex;flex-direction:column;gap:14px;
+}
+.level-num{
+  font-family:'JetBrains Mono',monospace;font-size:11px;
+  letter-spacing:.11em;text-transform:uppercase;font-weight:600;
+}
+.level-name{
+  font-family:'Manrope',sans-serif;font-weight:800;
+  font-size:24px;letter-spacing:-.02em;line-height:1.05;color:var(--white-d);
+}
+.level-tag{font-size:13.5px;color:var(--dim);line-height:1.65}
+.level-includes{
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+  margin-top:6px;
+}
+.access-chip{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;color:var(--white);
+  background:var(--g2);border:1px solid var(--b2);
+  border-radius:7px;padding:9px 13px;margin-top:2px;
+}
+.access-chip .ic{font-size:14px}
+.level-content{padding:32px}
+.format-lbl{
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+  margin-bottom:16px;
+}
+
+/* Format rows */
+.fr-list{display:flex;flex-direction:column;gap:10px}
+.fr{
+  display:grid;grid-template-columns:48px 1fr auto;
+  gap:16px;align-items:center;
+  padding:18px 20px;
+  background:var(--ds-bg-3);border:1px solid var(--b1);
+  border-radius:11px;transition:all .2s;
+}
+.fr:hover{border-color:var(--b2);background:var(--ds-bg-4)}
+.fr-ic{
+  width:48px;height:48px;border-radius:10px;
+  background:var(--g2);border:1px solid var(--b2);
+  display:flex;align-items:center;justify-content:center;font-size:22px;
+}
+.fr-mid{}
+.fr-name{font-weight:700;font-size:14.5px;color:var(--white-d);margin-bottom:4px}
+.fr-desc{font-size:13px;color:var(--dim);line-height:1.55}
+.fr-price{
+  text-align:right;font-family:'Manrope',sans-serif;
+  font-weight:800;font-size:20px;letter-spacing:-.015em;
+  white-space:nowrap;color:var(--ds-blue-l);
+}
+.fr-price small{
+  display:block;font-size:10.5px;color:var(--muted);font-weight:500;
+  font-family:'JetBrains Mono',monospace;letter-spacing:.04em;margin-top:3px;
+}
+.fr-price.free{color:var(--l1)}
+.fr-price.free small{color:var(--muted)}
+
+/* Level accent colors */
+.lv1 .level-num{color:var(--l1)}
+.lv1 .level-side{background:linear-gradient(180deg,rgba(45,212,191,0.05),transparent 60%)}
+.lv1 .access-chip{border-color:rgba(45,212,191,0.3);background:rgba(45,212,191,0.06)}
+.lv1 .fr-price{color:var(--l1)}
+
+.lv2 .level-num{color:var(--l2)}
+.lv2 .level-side{background:linear-gradient(180deg,rgba(27,155,209,0.05),transparent 60%)}
+.lv2 .fr-price{color:var(--ds-blue-l)}
+
+.lv3 .level-num{color:var(--l3)}
+.lv3 .level-side{background:linear-gradient(180deg,rgba(139,92,246,0.05),transparent 60%)}
+.lv3 .fr-price{color:var(--l3)}
+
+.lv4 .level-num{color:var(--l4)}
+.lv4 .level-side{background:linear-gradient(180deg,rgba(245,158,11,0.05),transparent 60%)}
+.lv4 .fr-price{color:var(--l4)}
+
+/* Modules pill row */
+.modules-block{
+  margin-top:18px;padding:16px 18px;
+  background:var(--ds-bg-3);border:1px solid var(--b1);border-radius:11px;
+}
+.modules-lbl{
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+  margin-bottom:10px;
+}
+.module-pills{display:flex;flex-wrap:wrap;gap:7px}
+.mp{
+  font-size:12px;padding:5px 11px;border-radius:6px;
+  background:var(--g2);border:1px solid var(--b2);color:var(--ds-blue-l);
+  font-weight:500;
+}
+
+/* Workshop includes list */
+.includes-list{display:flex;flex-direction:column;gap:8px;margin-top:6px}
+.includes-list li{
+  display:flex;gap:10px;align-items:flex-start;list-style:none;
+  font-size:13px;color:var(--dim);line-height:1.55;
+}
+.includes-list li::before{
+  content:'';width:5px;height:5px;border-radius:50%;
+  background:var(--l3);margin-top:7px;flex-shrink:0;
+}
+
+/* Advisor perks grid + monetary stack */
+.advisor-stack{display:flex;flex-direction:column;gap:14px;margin-bottom:18px}
+.monetary-row{
+  background:linear-gradient(135deg,rgba(245,158,11,0.08),rgba(245,158,11,0.02));
+  border:1px solid rgba(245,158,11,0.25);
+  border-radius:12px;padding:18px 20px;
+  display:grid;grid-template-columns:48px 1fr auto;gap:16px;align-items:center;
+}
+.mr-ic{font-size:24px}
+.mr-mid h4{font-weight:700;font-size:14.5px;color:var(--white-d);margin-bottom:3px}
+.mr-mid p{font-size:12.5px;color:var(--dim);line-height:1.5}
+.mr-price{
+  text-align:right;font-weight:800;font-size:20px;color:var(--l4);
+  white-space:nowrap;
+}
+.mr-price small{
+  display:block;font-size:10.5px;color:var(--muted);font-weight:500;
+  font-family:'JetBrains Mono',monospace;letter-spacing:.04em;margin-top:3px;
+}
+
+.perks{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.perk{
+  background:var(--ds-bg-3);border:1px solid var(--b1);
+  border-radius:10px;padding:16px;
+  display:flex;gap:12px;align-items:flex-start;
+}
+.perk-ic{font-size:18px;padding-top:2px;flex-shrink:0}
+.perk-t h4{font-weight:700;font-size:13.5px;margin-bottom:3px;color:var(--white-d)}
+.perk-t p{font-size:12.5px;color:var(--dim);line-height:1.55}
+
+/* ── HOW IT WORKS ── */
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.how-card{
+  background:var(--g1);border:1px solid var(--b1);
+  border-radius:12px;padding:24px;position:relative;
+}
+.how-num{
+  font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;
+  letter-spacing:.1em;color:var(--ds-blue-l);margin-bottom:14px;
+}
+.how-card h3{
+  font-weight:700;font-size:16px;margin-bottom:10px;color:var(--white-d);
+  letter-spacing:-.01em;
+}
+.how-card p{font-size:13.5px;color:var(--dim);line-height:1.65}
+
+/* ── CTA STRIP ── */
+.cta-strip{
+  background:linear-gradient(135deg,var(--ds-bg-3),var(--ds-bg-4));
+  border:1px solid var(--b2);border-radius:16px;
+  padding:40px 44px;text-align:center;
+  position:relative;overflow:hidden;
+}
+.cta-strip::before{
+  content:'';position:absolute;
+  width:400px;height:400px;border-radius:50%;
+  background:var(--ds-blue);opacity:.06;filter:blur(80px);
+  top:-180px;left:50%;transform:translateX(-50%);
+}
+.cta-strip h2{
+  font-family:'Manrope',sans-serif;font-weight:800;
+  font-size:clamp(22px,2.8vw,32px);letter-spacing:-.02em;
+  margin-bottom:12px;position:relative;color:var(--white-d);
+}
+.cta-strip h2 em{color:var(--ds-blue-l);font-style:normal}
+.cta-strip p{
+  font-size:15px;color:var(--dim);max-width:460px;
+  margin:0 auto 28px;line-height:1.65;position:relative;
+}
+.cta-row{display:flex;gap:12px;justify-content:center;position:relative;flex-wrap:wrap}
+.btn{
+  font-family:'Manrope',sans-serif;font-size:14px;font-weight:600;
+  padding:13px 28px;border-radius:8px;cursor:pointer;
+  transition:all .2s;border:none;letter-spacing:.005em;
+}
+.btn-primary{
+  background:var(--ds-blue);color:#fff;
+  box-shadow:0 0 0 0 rgba(27,155,209,0.4);
+}
+.btn-primary:hover{
+  background:var(--ds-blue-l);
+  box-shadow:0 0 0 4px rgba(27,155,209,0.15);
+  transform:translateY(-1px);
+}
+.btn-secondary{
+  background:transparent;border:1px solid var(--b2);color:var(--white);
+}
+.btn-secondary:hover{border-color:var(--b3);color:var(--ds-blue-l)}
+
+/* ── FOOTER ── */
+footer{
+  border-top:1px solid var(--b1);padding:32px 48px;
+  background:var(--ds-bg-2);
+}
+.ft-inner{
+  max-width:1100px;margin:0 auto;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
+}
+.ft-left{display:flex;align-items:center;gap:14px}
+.ft-logo{height:22px;width:auto;filter:brightness(0) invert(1);opacity:.7}
+.ft-note{font-size:12px;color:var(--muted)}
+.ft-links{display:flex;gap:20px}
+.ft-links a{font-size:12.5px;color:var(--dim);transition:color .15s}
+.ft-links a:hover{color:var(--ds-blue-l)}
+
+/* ── FADE-IN ── */
+.f{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.f.in{opacity:1;transform:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:920px){
+  header,.hero,.main,footer{padding-left:24px;padding-right:24px}
+  .hero{padding-top:56px;padding-bottom:56px}
+  .hero-inner{grid-template-columns:1fr;gap:36px}
+  .promises{grid-template-columns:1fr 1fr}
+  .feat-hero{grid-template-columns:1fr;gap:24px;padding:24px}
+  .feat-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .access-tiers{grid-template-columns:1fr}
+  .entry-banner{grid-template-columns:48px 1fr;gap:14px}
+  .eb-cta{grid-column:span 2;text-align:center}
+  .funnel{grid-template-columns:1fr 1fr;gap:32px 16px}
+  .funnel::before{display:none}
+  .level{grid-template-columns:1fr}
+  .level-side{border-right:none;border-bottom:1px solid var(--b1)}
+  .fr{grid-template-columns:48px 1fr;gap:14px}
+  .fr-price{grid-column:span 2;text-align:left;padding-top:6px;border-top:1px solid var(--b1)}
+  .how-grid{grid-template-columns:1fr}
+  .perks{grid-template-columns:1fr}
+  .hnav a:not(.cta){display:none}
+  .monetary-row{grid-template-columns:48px 1fr;gap:14px}
+  .mr-price{grid-column:span 2;text-align:left;padding-top:6px;border-top:1px solid rgba(245,158,11,0.2)}
+}
+@media(max-width:560px){
+  .feat-grid{grid-template-columns:1fr}
+  .promises{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ─────────── HEADER ─────────── -->
+<header>
+  <div class="logo-wrap">
+    <div class="ds-logo">
+      <div class="ds-mark">DS</div>
+      <div class="ds-text">DemandSense</div>
+    </div>
+    <div class="logo-divider"></div>
+    <div class="logo-prog">Creator Partnership</div>
+  </div>
+  <nav class="hnav">
+    <a href="#features">Platform</a>
+    <a href="#funnel">The Program</a>
+    <a href="#levels">Levels</a>
+    <a href="https://forms.clickup.com/9010022008/f/8cgm1kr-510931/05SJUXM1KWVES1PW2U" target="_blank" rel="noopener" class="cta">Apply</a>
+  </nav>
+</header>
+
+<!-- ─────────── HERO ─────────── -->
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-pill"><div class="pulse"></div>2026 · Creator Partnership Program</div>
+      <h1>The LinkedIn Ads platform built for <em>practitioners.</em></h1>
+      <p class="hero-sub">DemandSense gives you ad scheduling, frequency caps, account-wide exclusions, hour-by-hour reporting, website visitor ID, and full CRM attribution — all under $500/month. We're opening it up to a small group of LinkedIn Ads creators. Use it, share what you find, get paid for the content.</p>
+      <div class="hero-cta-row">
+        <a href="#features" class="hero-link">See what's inside ↓</a>
+        <a href="#levels" class="hero-link">Jump to compensation ↓</a>
+      </div>
+    </div>
+    <div class="hero-side">
+      <div class="hero-card">
+        <div class="hc-toolbar">
+          <div class="hc-dots"><span></span><span></span><span></span></div>
+          <div class="hc-tab">Account Journey · ProjectScale</div>
+        </div>
+        <div class="hc-body">
+          <div class="hc-event">
+            <div class="hc-dot e-imp"></div>
+            <div class="hc-event-mid">
+              <div class="hc-event-t">First impression served</div>
+              <div class="hc-event-meta">VP Marketing · Tuesday 9:47 AM</div>
+            </div>
+            <div class="hc-event-tag">Day 1</div>
+          </div>
+          <div class="hc-event">
+            <div class="hc-dot e-eng"></div>
+            <div class="hc-event-mid">
+              <div class="hc-event-t">Engaged with carousel ad</div>
+              <div class="hc-event-meta">3 clicks · 2 different roles</div>
+            </div>
+            <div class="hc-event-tag">Day 4</div>
+          </div>
+          <div class="hc-event">
+            <div class="hc-dot e-web"></div>
+            <div class="hc-event-mid">
+              <div class="hc-event-t">Identified on /pricing page</div>
+              <div class="hc-event-meta">Web ID · 4 min session</div>
+            </div>
+            <div class="hc-event-tag">Day 9</div>
+          </div>
+          <div class="hc-event">
+            <div class="hc-dot e-deal"></div>
+            <div class="hc-event-mid">
+              <div class="hc-event-t">Deal created in HubSpot</div>
+              <div class="hc-event-meta">$24K ARR · attributed to LinkedIn</div>
+            </div>
+            <div class="hc-event-tag">Day 18</div>
+          </div>
+          <div class="hc-event">
+            <div class="hc-dot e-close"></div>
+            <div class="hc-event-mid">
+              <div class="hc-event-t">Closed-won</div>
+              <div class="hc-event-meta">7 touches · 4 identified visits</div>
+            </div>
+            <div class="hc-event-tag">Day 43</div>
+          </div>
+        </div>
+        <div class="hc-footer">
+          <span class="hc-foot-label">Full account journey</span>
+          <span class="hc-foot-val">Impression → Closed deal</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+
+<!-- ─────────── INSIDE DEMANDSENSE ─────────── -->
+<section id="features" class="f">
+  <div class="sec-eyebrow">Inside the Platform</div>
+  <h2 class="sec-title">What you'll be using.</h2>
+  <p class="sec-sub">DemandSense is the most affordable LinkedIn attribution platform on the market under $500 a month. It pairs deeper LinkedIn API access with website visitor identification and full CRM integration. Here's what's inside.</p>
+
+  <div class="feat-hero">
+    <div class="feat-hero-content">
+      <div class="feat-tag">⭐ The flagship</div>
+      <h3>Full LinkedIn attribution under $500/month.</h3>
+      <p>Native integrations with HubSpot, Salesforce, Zoho, and Attio. The journey view tracks every ad impression, engagement, identified website visit, and CRM event from first touch to closed deal. Nothing else on the market does this at the SMB and mid-market price point.</p>
+      <div class="feat-logos">
+        <div class="feat-logo">HubSpot</div>
+        <div class="feat-logo">Salesforce</div>
+        <div class="feat-logo">Zoho</div>
+        <div class="feat-logo">Attio</div>
+      </div>
+    </div>
+    <div class="feat-hero-visual">
+      <div class="fhv-row"><span class="fhv-step">Ad Impression</span><span class="fhv-arrow">→</span></div>
+      <div class="fhv-row"><span class="fhv-step">Engagement</span><span class="fhv-arrow">→</span></div>
+      <div class="fhv-row"><span class="fhv-step">Web Visit</span><span class="fhv-arrow">→</span></div>
+      <div class="fhv-row"><span class="fhv-step">Deal Created</span><span class="fhv-arrow">→</span></div>
+      <div class="fhv-row last"><span class="fhv-step done">Closed Won</span></div>
+    </div>
+  </div>
+
+  <!-- TWO TIERS OF ACCESS -->
+  <div class="access-tiers">
+    <div class="access-tier free">
+      <div class="at-head">
+        <div class="at-num">Path A</div>
+        <div class="at-name">Free 90-Day Access</div>
+      </div>
+      <div class="at-tagline">No commitment. Easy way to try the platform.</div>
+      <ul class="at-list">
+        <li>90 days of full platform access</li>
+        <li>Web ID light included</li>
+        <li>Private feature feedback only — no public posting required</li>
+        <li>Extendable with additional feature reviews</li>
+      </ul>
+      <div class="at-footer">The easiest way to try DemandSense.</div>
+    </div>
+    <div class="access-tier paid">
+      <div class="at-head">
+        <div class="at-num">Path B</div>
+        <div class="at-name">Creator Partnership</div>
+      </div>
+      <div class="at-tagline">Get paid to post. Build revenue streams alongside the platform.</div>
+      <ul class="at-list">
+        <li>Everything in Path A, plus full Web ID and beta features</li>
+        <li>Paid for every piece of public content</li>
+        <li>Access to ICP-fit companies inside DS for diagnostic and audit funnels</li>
+        <li>Featured on the official DemandSense Partners page</li>
+        <li>Direct lead routing for top-tier creators in the Advisor ring</li>
+      </ul>
+      <div class="at-footer">For LinkedIn Ads experts who want to build a long-term presence.</div>
+    </div>
+  </div>
+
+  <div class="feat-callout">
+    <div class="feat-callout-ic">💰</div>
+    <div class="feat-callout-t">
+      <strong>Real revenue streams, not just platform access.</strong> DemandSense surfaces ICP-fit companies engaging with our customers' campaigns. Creator partners get to participate in audit and diagnostic funnels to that pool, generating real pipeline for themselves while delivering value to customers. Top creators and Advisors get prioritized routing for execution work referred from the platform.
+    </div>
+  </div>
+
+  <div class="feat-grid">
+    <div class="feat-card">
+      <div class="feat-ic">📅</div>
+      <h4>Ad scheduling</h4>
+      <p>Choose exact days and hours when your ads run. Pause during low-intent periods automatically. Saves up to 40% of wasted budget.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-ic">💰</div>
+      <h4>Budget pacing controls</h4>
+      <p>Set spend velocity rules once and the platform enforces them. Real-time pacing prevents overspending without manual babysitting.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-ic">🔁</div>
+      <h4>Frequency caps</h4>
+      <p>Cap how often the same company sees your ads. Prevents fatigue and stops budget concentration on the same 20 accounts.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-ic">🎯</div>
+      <h4>One-click account-wide exclusions</h4>
+      <p>Exclude entire industries, company sizes, seniorities, titles, or regions across every campaign in the account in one click.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-ic">🌐</div>
+      <h4>Website visitor ID</h4>
+      <p>Identify the companies visiting your site, even when they don't fill a form. Pair them with your LinkedIn audiences for full picture.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-ic">⏱️</div>
+      <h4>Hour-by-hour reporting</h4>
+      <p>Granular insights LinkedIn doesn't give you natively. See exactly which hours and days drive engagement and pipeline.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-ic">📈</div>
+      <h4>Account journey view</h4>
+      <p>Month-over-month timeline showing ad impressions, engagement, identified visits, deal creation, and close. The "wow" moment.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-ic">🎨</div>
+      <h4>Audience tuning</h4>
+      <p>AI automatically refines targeting in real time by excluding non-ICP criteria so your spend goes to companies that can actually convert.</p>
+    </div>
+  </div>
+
+  <div class="feat-callout">
+    <div class="feat-callout-ic">💡</div>
+    <div class="feat-callout-t">
+      <strong>Why this matters for the partnership:</strong> Most LinkedIn Ads creators don't realize an attribution platform at this price point exists. You'll be one of the first practitioners to use it openly and share what you find. The content writes itself once you're inside.
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── PROMISES ─────────── -->
+<section id="promises" class="f">
+  <div class="sec-eyebrow">Why this exists</div>
+  <h2 class="sec-title">A real partnership. Not a sponsorship deal.</h2>
+  <p class="sec-sub">DemandSense was built by practitioners for practitioners. The creator program exists because the people running LinkedIn Ads every day know what works better than any marketing team ever could. We want their voice inside the platform.</p>
+
+  <div class="promises">
+    <div class="promise">
+      <div class="promise-icon">📣</div>
+      <h3>You reach our audience</h3>
+      <p>Distribution behind every piece of content you publish — LinkedIn, newsletter, and email list.</p>
+    </div>
+    <div class="promise">
+      <div class="promise-icon">🔄</div>
+      <h3>Leads route back to you</h3>
+      <p>Consulting and audit inquiries triggered by your content go directly to you, not a shared inbox.</p>
+    </div>
+    <div class="promise">
+      <div class="promise-icon">🏛️</div>
+      <h3>Permanent credit inside DS</h3>
+      <p>Your frameworks and reports live inside the platform with your name and face on them.</p>
+    </div>
+    <div class="promise">
+      <div class="promise-icon">💵</div>
+      <h3>Multiple paths to grow</h3>
+      <p>Start small, scale to workshops, earn an advisory role. Each level brings more visibility and more pay.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── FUNNEL OVERVIEW ─────────── -->
+<section id="funnel" class="f">
+  <div class="sec-eyebrow">The Program</div>
+  <h2 class="sec-title">Four levels. Designed to grow with you.</h2>
+  <p class="sec-sub">The real entry offer is simple — a free 90-day trial in exchange for private feature feedback, extendable through additional feature reviews. From there, the depth and the pay scale as the relationship deepens.</p>
+
+  <div class="entry-banner">
+    <div class="eb-ic">🚀</div>
+    <div class="eb-mid">
+      <div class="eb-title">Start free — 90-day access for private feature feedback</div>
+      <div class="eb-sub">No public posting required. Just use the platform, share what you find. Extendable through additional reviews. The easiest way in.</div>
+    </div>
+    <a href="https://forms.clickup.com/9010022008/f/8cgm1kr-510931/05SJUXM1KWVES1PW2U" target="_blank" rel="noopener" class="eb-cta">Start free →</a>
+  </div>
+
+  <div class="funnel">
+    <div class="fnode n1">
+      <div class="fcircle">1</div>
+      <div class="fnode-label">Feature Review</div>
+      <div class="fnode-sub">A single post or video on one DS feature.</div>
+      <div class="fnode-price">from $250</div>
+    </div>
+    <div class="fnode n2">
+      <div class="fcircle">2</div>
+      <div class="fnode-label">Module Review</div>
+      <div class="fnode-sub">Deeper breakdown of a full module.</div>
+      <div class="fnode-price">from $500</div>
+    </div>
+    <div class="fnode n3">
+      <div class="fcircle">3</div>
+      <div class="fnode-label">Co-branded Workshop</div>
+      <div class="fnode-sub">LinkedIn Live built around your expertise.</div>
+      <div class="fnode-price">from $1,000</div>
+    </div>
+    <div class="fnode n4">
+      <div class="fcircle">4</div>
+      <div class="fnode-label">Advisor</div>
+      <div class="fnode-sub">Retained advisory role + priority everything.</div>
+      <div class="fnode-price">Quarterly retainer</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── LEVELS DETAIL ─────────── -->
+<section id="levels" class="f">
+
+  <div class="sec-eyebrow">The Levels</div>
+  <h2 class="sec-title">What each level looks like.</h2>
+  <p class="sec-sub">All pricing is a starting point. Final compensation is agreed individually based on audience, engagement, and format.</p>
+
+  <!-- LEVEL 1 -->
+  <div class="level lv1">
+    <div class="level-side">
+      <div class="level-num">Level 01</div>
+      <div class="level-name">Feature Review</div>
+      <p class="level-tag">The easiest way to start. Review one DemandSense feature in the format that fits how you naturally create. We send the brief and the co-branded assets. You bring the take.</p>
+      <div class="level-includes">Included with every Level 1</div>
+      <div class="access-chip"><span class="ic">🔑</span><span>90-day free DS access + Web ID light</span></div>
+    </div>
+    <div class="level-content">
+      <div class="format-lbl">Format and pricing</div>
+      <div class="fr-list">
+        <div class="fr">
+          <div class="fr-ic">💬</div>
+          <div class="fr-mid">
+            <div class="fr-name">Private Feedback</div>
+            <div class="fr-desc">Platform access and a feedback loop, no public post required.</div>
+          </div>
+          <div class="fr-price free">Free<small>90-day trial</small></div>
+        </div>
+        <div class="fr">
+          <div class="fr-ic">✍️</div>
+          <div class="fr-mid">
+            <div class="fr-name">Text Post</div>
+            <div class="fr-desc">A written take on a feature. Your words, grounded in something you saw in the platform.</div>
+          </div>
+          <div class="fr-price">from $250<small>starting rate</small></div>
+        </div>
+        <div class="fr">
+          <div class="fr-ic">🖼️</div>
+          <div class="fr-mid">
+            <div class="fr-name">Text + Image or Carousel</div>
+            <div class="fr-desc">A post with a co-branded graphic or carousel. We provide the template, you add the data.</div>
+          </div>
+          <div class="fr-price">from $250<small>starting rate</small></div>
+        </div>
+        <div class="fr">
+          <div class="fr-ic">🎥</div>
+          <div class="fr-mid">
+            <div class="fr-name">Video with Screenshare</div>
+            <div class="fr-desc">Short-form video showing DemandSense in action. Real data, real workflow.</div>
+          </div>
+          <div class="fr-price">from $500<small>starting rate</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEVEL 2 -->
+  <div class="level lv2">
+    <div class="level-side">
+      <div class="level-num">Level 02</div>
+      <div class="level-name">Module Review</div>
+      <p class="level-tag">Go deeper on a full DemandSense module. Pick the one that fits your expertise and walk our audience through how you'd actually use it.</p>
+      <div class="level-includes">Included with every Level 2</div>
+      <div class="access-chip"><span class="ic">🔑</span><span>Continued free DS access + permanent platform credit</span></div>
+    </div>
+    <div class="level-content">
+      <div class="format-lbl">Format and pricing</div>
+      <div class="fr-list">
+        <div class="fr">
+          <div class="fr-ic">📊</div>
+          <div class="fr-mid">
+            <div class="fr-name">Post or Carousel</div>
+            <div class="fr-desc">Full module breakdown — what it does, how you use it, what it changes. Co-branded.</div>
+          </div>
+          <div class="fr-price">from $500<small>starting rate</small></div>
+        </div>
+        <div class="fr">
+          <div class="fr-ic">🎬</div>
+          <div class="fr-mid">
+            <div class="fr-name">Video Walkthrough</div>
+            <div class="fr-desc">Live screenshare of a full module in action. The highest-impact content format we run.</div>
+          </div>
+          <div class="fr-price">from $1,000<small>starting rate</small></div>
+        </div>
+      </div>
+      <div class="modules-block">
+        <div class="modules-lbl">Available modules</div>
+        <div class="module-pills">
+          <span class="mp">Revenue Attribution</span>
+          <span class="mp">Web ID</span>
+          <span class="mp">Company Hub</span>
+          <span class="mp">Ad Controls</span>
+          <span class="mp">Audience Tuning</span>
+          <span class="mp">Account Journeys</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEVEL 3 -->
+  <div class="level lv3">
+    <div class="level-side">
+      <div class="level-num">Level 03</div>
+      <div class="level-name">Co-branded Workshop</div>
+      <p class="level-tag">A 20-30 minute LinkedIn Live built around your strategy or tactic. DemandSense hosts and produces everything. You show up and run the session.</p>
+      <div class="level-includes">DemandSense handles</div>
+      <ul class="includes-list">
+        <li>Full event creation, hosting, and registration</li>
+        <li>Pre-event email sequence to the DS list</li>
+        <li>Post-event email flow to all registrants</li>
+        <li>Recording, clipping, and full distribution</li>
+        <li>Your services pushed in every email touchpoint</li>
+      </ul>
+    </div>
+    <div class="level-content">
+      <div class="format-lbl">Format and pricing</div>
+      <div class="fr-list">
+        <div class="fr">
+          <div class="fr-ic">🎙️</div>
+          <div class="fr-mid">
+            <div class="fr-name">Single Workshop</div>
+            <div class="fr-desc">20-30 min LinkedIn Live. Includes 3 co-branded pre-event promotional posts.</div>
+          </div>
+          <div class="fr-price">from $1,000<small>starting rate</small></div>
+        </div>
+        <div class="fr">
+          <div class="fr-ic">📅</div>
+          <div class="fr-mid">
+            <div class="fr-name">3-Session Series</div>
+            <div class="fr-desc">3 workshops across 2 quarters. Flexible scheduling. DS adds ad spend behind top sessions.</div>
+          </div>
+          <div class="fr-price">$3K–$5K<small>full series · case by case</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEVEL 4 -->
+  <div class="level lv4">
+    <div class="level-side">
+      <div class="level-num">Level 04</div>
+      <div class="level-name">Advisor</div>
+      <p class="level-tag">A retained relationship for proven creators who are deep in the platform. Quarterly retainer on top of everything you already earn from posts and workshops. Plus priority on everything DemandSense distributes.</p>
+      <div class="level-includes">Earned through Level 3 activity</div>
+      <div class="access-chip" style="border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.06);color:var(--l4)"><span class="ic">⭐</span><span>By invitation only</span></div>
+    </div>
+    <div class="level-content">
+      <div class="format-lbl">Compensation</div>
+      <div class="advisor-stack">
+        <div class="monetary-row">
+          <div class="mr-ic">💰</div>
+          <div class="mr-mid">
+            <h4>Quarterly Retainer</h4>
+            <p>A relationship retainer paid on top of Level 1-3 deliverable income. Your time, input, and ongoing presence inside the platform.</p>
+          </div>
+          <div class="mr-price">from $1,500<small>per quarter · case by case</small></div>
+        </div>
+        <div class="monetary-row" style="background:linear-gradient(135deg,rgba(245,158,11,0.06),rgba(245,158,11,0.015))">
+          <div class="mr-ic">📣</div>
+          <div class="mr-mid">
+            <h4>Priority Sponsorship</h4>
+            <p>DemandSense puts paid spend behind your best-performing content first. Your posts and workshops get amplified before anyone else's.</p>
+          </div>
+          <div class="mr-price" style="font-size:14px">Sponsored by DS<small>budget allocated quarterly</small></div>
+        </div>
+      </div>
+      <div class="format-lbl" style="margin-top:8px">Plus all of these</div>
+      <div class="perks">
+        <div class="perk">
+          <div class="perk-ic">🗺️</div>
+          <div class="perk-t"><h4>Product Roadmap Input</h4><p>Your feedback gets prioritized. New features tested with you first.</p></div>
+        </div>
+        <div class="perk">
+          <div class="perk-ic">💺</div>
+          <div class="perk-t"><h4>Permanent Free Seat</h4><p>DemandSense access for as long as the partnership is active.</p></div>
+        </div>
+        <div class="perk">
+          <div class="perk-ic">📈</div>
+          <div class="perk-t"><h4>Affiliate Founding Tier</h4><p>First access to the DS affiliate program at the founding tier rate. Tracked from day one.</p></div>
+        </div>
+        <div class="perk">
+          <div class="perk-ic">🏛️</div>
+          <div class="perk-t"><h4>Permanent Platform Credit</h4><p>Your frameworks and reports live inside DS forever with your name on them.</p></div>
+        </div>
+        <div class="perk">
+          <div class="perk-ic">⭐</div>
+          <div class="perk-t"><h4>Advisory Board Seat</h4><p>Official DemandSense Advisory Board membership. Add it to your LinkedIn profile.</p></div>
+        </div>
+        <div class="perk">
+          <div class="perk-ic">🤝</div>
+          <div class="perk-t"><h4>Client Profit Share</h4><p>Revenue share on DemandSense seats used by clients you refer.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ─────────── HOW IT WORKS ─────────── -->
+<section id="how" class="f">
+  <div class="sec-eyebrow">How It Works</div>
+  <h2 class="sec-title">From first conversation to first post.</h2>
+  <p class="sec-sub">No long sales process. The goal is to get you into the platform and creating content fast. Most partners go from intro call to first published post in under three weeks.</p>
+
+  <div class="how-grid">
+    <div class="how-card">
+      <div class="how-num">01 · Intro Call</div>
+      <h3>20 minutes to align</h3>
+      <p>A short call to understand your audience, your style, and where you'd want to start. No commitment, no formal pitch.</p>
+    </div>
+    <div class="how-card">
+      <div class="how-num">02 · Platform Access</div>
+      <h3>90-day free DS account</h3>
+      <p>You get full platform access plus Web ID light. Use it for your own LinkedIn Ads or your clients' accounts. Real data, no demo restrictions.</p>
+    </div>
+    <div class="how-card">
+      <div class="how-num">03 · First Content</div>
+      <h3>Brief, draft, publish</h3>
+      <p>You pick a feature and format. We send the brief and co-branded assets within 48 hours. Draft review takes under 24 hours. Then you publish and get paid.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── CTA STRIP ─────────── -->
+<section style="border-bottom:none">
+  <div class="cta-strip f">
+    <h2>Start the <em>conversation.</em></h2>
+    <p>The application is a 20-minute call. We'll walk through what makes sense for your audience and your timeline.</p>
+    <div class="cta-row">
+      <a href="https://forms.clickup.com/9010022008/f/8cgm1kr-510931/05SJUXM1KWVES1PW2U" target="_blank" rel="noopener" class="btn btn-primary">Apply for the Program</a>
+      <a href="https://www.demandsense.com" target="_blank" class="btn btn-secondary">Explore DemandSense</a>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- ─────────── FOOTER ─────────── -->
+<footer>
+  <div class="ft-inner">
+    <div class="ft-left">
+      <div class="ds-logo" style="opacity:.85">
+        <div class="ds-mark" style="width:24px;height:24px;font-size:10px">DS</div>
+        <div class="ds-text" style="font-size:14px">DemandSense</div>
+      </div>
+      <div class="ft-note">Creator Partnership Program · 2026</div>
+    </div>
+    <div class="ft-links">
+      <a href="https://www.demandsense.com">Platform</a>
+      <a href="https://www.demandsense.com/blog">Blog</a>
+      <a href="https://forms.clickup.com/9010022008/f/8cgm1kr-510931/05SJUXM1KWVES1PW2U" target="_blank" rel="noopener">Apply</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const io = new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in')})},{threshold:0.07});
+document.querySelectorAll('.f').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
